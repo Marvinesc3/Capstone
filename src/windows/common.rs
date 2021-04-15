@@ -17,7 +17,11 @@ pub use winapi::{
 };
 pub use std::process;
 pub use once_cell::sync::Lazy;
-use crate::windows::keyboard::*;
+
+#[path="../events.rs"]
+mod events;
+use crate::events::events::{KeyboardEvent, MouseEvent, LinuxEvent};
+use crate::events::events::*;
 
 pub fn set_hook(
     hook_id: i32,

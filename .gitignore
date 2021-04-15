@@ -5,3 +5,6 @@ test2.py
 test3.py
 test4.py
 Cargo.lock
+/src/mac/mac_support/target
+/src/mac/mac_support/cargo.lock
+
